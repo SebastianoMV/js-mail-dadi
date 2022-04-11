@@ -38,8 +38,8 @@ const dadoPc = document.querySelector('.dadoPC');
 const risultatoDadi = document.querySelector('h2');
 
 btnStartDadi.addEventListener('click', function(){
-  let numeroUt = Math.floor(Math.random() * 6); 
-  let numeroPC = Math.floor(Math.random() * 6);
+  let numeroUt = Math.floor(Math.random() * 6 + 1); 
+  let numeroPC = Math.floor(Math.random() * 6 + 1);
   dadoUtente.innerHTML = numeroUt;
   dadoPc.innerHTML = numeroPC;
 
