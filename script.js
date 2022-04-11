@@ -7,6 +7,7 @@ const mailList = ['marco@gmail.com', 'carlo@gmail.com', 'michele@gmail.com', 'ga
 
 const btnStartEmail = document.querySelector('#btnEmail');
 const risultato = document.querySelector('h1');
+const active = document.querySelector('.smv-container-dadi');
 
 btnStartEmail.addEventListener('click', function(){
 
@@ -20,6 +21,7 @@ btnStartEmail.addEventListener('click', function(){
   };
   if (presenza == true){
     risultato.innerHTML = 'Benvenuto!'
+    active.classList.remove('smv-hide');
   }else{
     risultato.innerHTML = 'Non sei registrato'
   }
