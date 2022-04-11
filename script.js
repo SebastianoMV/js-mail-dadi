@@ -24,6 +24,7 @@ btnStartEmail.addEventListener('click', function(){
     active.classList.remove('smv-hide');
   }else{
     risultato.innerHTML = 'Non sei registrato'
+    active.classList.add('smv-hide');
   }
 });
 
